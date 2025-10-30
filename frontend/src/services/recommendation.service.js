@@ -1,9 +1,5 @@
 const getRecommendations = (formData = {}, products = []) => {
-  const {
-    selectedPreferences = [],
-    selectedFeatures = [],
-    selectedRecommendationType,
-  } = formData;
+  const { selectedPreferences = [], selectedFeatures = [], selectedRecommendationType } = formData;
 
   const scored = products
     .map((product) => {
@@ -24,11 +20,9 @@ const getRecommendations = (formData = {}, products = []) => {
     .filter((product) => product.score > 0)
     .sort((a, b) => b.score - a.score);
 
-  if (selectedRecommendationType === "SingleProduct")
-    return scored.length ? [scored.pop()] : [];
+  if (selectedRecommendationType === 'SingleProduct') return scored.length ? [scored.pop()] : [];
 
-  if (selectedRecommendationType === "MultipleProducts")
-    return scored;
+  if (selectedRecommendationType === 'MultipleProducts') return scored;
 
   return [];
 };

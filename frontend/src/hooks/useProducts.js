@@ -21,9 +21,7 @@ const useProducts = () => {
             .slice(0, 2);
           allPreferences.push(...productPreferences);
 
-          const productFeatures = product.features
-            .sort(() => Math.random() - 0.5)
-            .slice(0, 2);
+          const productFeatures = product.features.sort(() => Math.random() - 0.5).slice(0, 2);
           allFeatures.push(...productFeatures);
         });
 
