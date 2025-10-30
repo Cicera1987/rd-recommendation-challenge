@@ -2,9 +2,13 @@ import React from 'react';
 
 function Checkbox({ children, ...props }) {
   return (
-    <label className="flex items-center">
-      <input type="checkbox" className="form-checkbox h-5 w-5 text-blue-500" {...props} />
-      <span className="ml-2">{children}</span>
+    <label className="flex items-center gap-2 cursor-pointer select-none">
+      <input
+        type="checkbox"
+        className="w-4 h-4 accent-blue-500 border-gray rounded-sm"
+        {...props}
+      />
+      <span className="text-xs text-blue font-medium break-words leading-snug">{children}</span>
     </label>
   );
 }

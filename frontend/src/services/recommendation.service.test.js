@@ -9,10 +9,7 @@ describe('recommendationService', () => {
       selectedRecommendationType: 'SingleProduct',
     };
 
-    const recommendations = recommendationService.getRecommendations(
-      formData,
-      mockProducts
-    );
+    const recommendations = recommendationService.getRecommendations(formData, mockProducts);
 
     expect(recommendations).toHaveLength(1);
     const product = recommendations[0];
@@ -35,10 +32,7 @@ describe('recommendationService', () => {
       selectedRecommendationType: 'MultipleProducts',
     };
 
-    const recommendations = recommendationService.getRecommendations(
-      formData,
-      mockProducts
-    );
+    const recommendations = recommendationService.getRecommendations(formData, mockProducts);
 
     expect(recommendations).toHaveLength(2);
 
@@ -53,10 +47,7 @@ describe('recommendationService', () => {
 
   test('Retorna apenas um produto para SingleProduct com mais de um produto de match', () => {
     const formData = {
-      selectedPreferences: [
-        'Integração fácil com ferramentas de e-mail',
-        'Automação de marketing',
-      ],
+      selectedPreferences: ['Integração fácil com ferramentas de e-mail', 'Automação de marketing'],
       selectedFeatures: [
         'Rastreamento de interações com clientes',
         'Rastreamento de comportamento do usuário',
@@ -64,10 +55,7 @@ describe('recommendationService', () => {
       selectedRecommendationType: 'SingleProduct',
     };
 
-    const recommendations = recommendationService.getRecommendations(
-      formData,
-      mockProducts
-    );
+    const recommendations = recommendationService.getRecommendations(formData, mockProducts);
 
     expect(recommendations).toHaveLength(1);
     const product = recommendations[0];
@@ -82,10 +70,7 @@ describe('recommendationService', () => {
       selectedRecommendationType: 'SingleProduct',
     };
 
-    const recommendations = recommendationService.getRecommendations(
-      formData,
-      mockProducts
-    );
+    const recommendations = recommendationService.getRecommendations(formData, mockProducts);
 
     expect(recommendations).toHaveLength(1);
     const product = recommendations[0];

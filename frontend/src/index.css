@@ -16,7 +16,6 @@
   @apply text-link;
 }
 
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -30,4 +29,7 @@
 .App-logo {
   @apply h-[40vmin] pointer-events-none;
   animation: App-logo-spin 20s linear infinite;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }

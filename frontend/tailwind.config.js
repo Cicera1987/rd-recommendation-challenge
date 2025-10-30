@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}",
-  ],
+  content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     extend: {
       colors: {
@@ -17,14 +15,28 @@ module.exports = {
         cyan: '#00f0c8',
         accent: '#00dc104',
         link: '#61dafb',
-        blue: "#002233",
-        water: "#d3faff"
+        blue: '#002233',
+        water: '#d3faff',
       },
       fontFamily: {
-        sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen',
-          'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-          'sans-serif'],
+        sans: [
+          '-apple-system',
+          'BlinkMacSystemFont',
+          'Segoe UI',
+          'Roboto',
+          'Oxygen',
+          'Ubuntu',
+          'Cantarell',
+          'Fira Sans',
+          'Droid Sans',
+          'Helvetica Neue',
+          'sans-serif',
+        ],
         mono: ['source-code-pro', 'Menlo', 'Monaco', 'Consolas', 'Courier New', 'monospace'],
+      },
+      backgroundImage: {
+        'custom-gradient': `radial-gradient(37.31% 31.05% at 100% 18.35%, rgba(123, 239, 255, 0.20) 0%, rgba(123, 239, 255, 0.00) 100%), 
+                            radial-gradient(34.21% 34.93% at 20.24% 0%, rgba(195, 246, 40, 0.20) 0%, rgba(195, 246, 40, 0.00) 100%, #FFF)`,
       },
     },
   },
