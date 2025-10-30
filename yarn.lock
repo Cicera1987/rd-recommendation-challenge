@@ -1796,6 +1796,51 @@
     "tslib" "^2.3.0"
     "yargs-parser" "21.1.1"
 
+"@nx/nx-darwin-arm64@17.3.1":
+  "integrity" "sha512-19YkMr/9fMWQsaiFxkLmz50WzIQ6nktEwDfjhSOOFeRc40SCw848ZWZ4EZDH6dOgKK3UOeW6OX9vr5+GMn2yLA=="
+  "resolved" "https://registry.npmjs.org/@nx/nx-darwin-arm64/-/nx-darwin-arm64-17.3.1.tgz"
+  "version" "17.3.1"
+
+"@nx/nx-darwin-x64@17.3.1":
+  "integrity" "sha512-FaI9VI7XwG32jDArAZK0F+mWN6ZU7Y8anFr7C1VMcgVbaMLz6i4kp3sy5kFAbFDgFcpTdUOiZq5Ay+hJtDyufg=="
+  "resolved" "https://registry.npmjs.org/@nx/nx-darwin-x64/-/nx-darwin-x64-17.3.1.tgz"
+  "version" "17.3.1"
+
+"@nx/nx-freebsd-x64@17.3.1":
+  "integrity" "sha512-AZ+kl5x+O+8Ptrzw/RXgSZFs6V4U6TlieTOoCtrPtmVR7mz9nxMfwQNf/GAz8kbiC+u9PDH5rFl/UblEi4WF6g=="
+  "resolved" "https://registry.npmjs.org/@nx/nx-freebsd-x64/-/nx-freebsd-x64-17.3.1.tgz"
+  "version" "17.3.1"
+
+"@nx/nx-linux-arm-gnueabihf@17.3.1":
+  "integrity" "sha512-a8Y7435O2lxbtNsQ4vciYqXJ8eFVyOJizhiQ6koh/VHN/0FEYuGVkJRRXinDS44W0dfiDRXvbQKvPtjAvD5gJQ=="
+  "resolved" "https://registry.npmjs.org/@nx/nx-linux-arm-gnueabihf/-/nx-linux-arm-gnueabihf-17.3.1.tgz"
+  "version" "17.3.1"
+
+"@nx/nx-linux-arm64-gnu@17.3.1":
+  "integrity" "sha512-B/o/xTvSUlWG/OTCh96BkaWD1rE1kSJ20BdRgyG4CGGH318/PgcvimeMvJcwNJNDoRsyJxAEKveGGD6gKkffcQ=="
+  "resolved" "https://registry.npmjs.org/@nx/nx-linux-arm64-gnu/-/nx-linux-arm64-gnu-17.3.1.tgz"
+  "version" "17.3.1"
+
+"@nx/nx-linux-arm64-musl@17.3.1":
+  "integrity" "sha512-lOIAE3N6I1U2/dctuw2b3QIR+pXjlag3dYk+hLC+p/Sd5FZ0GBzpQhGzi03VsbQdIkIJ95K2gd05yolZLFOVqw=="
+  "resolved" "https://registry.npmjs.org/@nx/nx-linux-arm64-musl/-/nx-linux-arm64-musl-17.3.1.tgz"
+  "version" "17.3.1"
+
+"@nx/nx-linux-x64-gnu@17.3.1":
+  "integrity" "sha512-pTCwQFAojEpeYP02xDZtnmRvViRLzbBXXWZNBf5pprCJGGKtHsVrwrswRJlt3btN/UWn2J/uFbTXyHDFWu8egA=="
+  "resolved" "https://registry.npmjs.org/@nx/nx-linux-x64-gnu/-/nx-linux-x64-gnu-17.3.1.tgz"
+  "version" "17.3.1"
+
+"@nx/nx-linux-x64-musl@17.3.1":
+  "integrity" "sha512-WIV4gQjQAVp2oW/qtY4FmP7eeLwyo+bkoVw9PY42A89N6o7rYa/z77s9ajnl98A3eGb2ghe9fwwgAerLgmuFzA=="
+  "resolved" "https://registry.npmjs.org/@nx/nx-linux-x64-musl/-/nx-linux-x64-musl-17.3.1.tgz"
+  "version" "17.3.1"
+
+"@nx/nx-win32-arm64-msvc@17.3.1":
+  "integrity" "sha512-HKc4QWIP7r+FmK0Anzrey7udlDLaKscHbrNGQN9YV2/ulYVtHidIVZCXYZq3p93Gg55e4t2uAiUuXSXdyy8Q6g=="
+  "resolved" "https://registry.npmjs.org/@nx/nx-win32-arm64-msvc/-/nx-win32-arm64-msvc-17.3.1.tgz"
+  "version" "17.3.1"
+
 "@nx/nx-win32-x64-msvc@17.3.1":
   "integrity" "sha512-o2QrIeHGBG6BqViVCPP0J3V9UEDMjyDxyMJF/l/DT4dWr/+zdrIJ11eiQs7Tvo2GLXJFXI0fMur8p3HopnOvAQ=="
   "resolved" "https://registry.npmjs.org/@nx/nx-win32-x64-msvc/-/nx-win32-x64-msvc-17.3.1.tgz"
@@ -3664,7 +3709,7 @@
     "babel-plugin-macros" "^3.1.0"
     "babel-plugin-transform-react-remove-prop-types" "^0.4.24"
 
-"backend@file:C:\\Users\\Cicera\\Desktop\\RD_Station\\rd-recommendation-challenge\\backend":
+"backend@file:c:\\Users\\Cicera\\Desktop\\RD_Station\\rd-recommendation-challenge\\backend":
   "resolved" "file:backend"
   "version" "1.0.0"
 
@@ -6107,7 +6152,7 @@
   "resolved" "https://registry.npmjs.org/fresh/-/fresh-0.5.2.tgz"
   "version" "0.5.2"
 
-"frontend@file:C:\\Users\\Cicera\\Desktop\\RD_Station\\rd-recommendation-challenge\\frontend":
+"frontend@file:c:\\Users\\Cicera\\Desktop\\RD_Station\\rd-recommendation-challenge\\frontend":
   "resolved" "file:frontend"
   "version" "0.1.0"
   dependencies:
@@ -6188,6 +6233,11 @@
   "integrity" "sha512-OO0pH2lK6a0hZnAdau5ItzHPI6pUlvI7jMVnxUQRtw4owF2wk8lOSabtGDCTP4Ggrg2MbGnWO9X8K1t4+fGMDw=="
   "resolved" "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz"
   "version" "1.0.0"
+
+"fsevents@^2.3.2", "fsevents@~2.3.2":
+  "integrity" "sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw=="
+  "resolved" "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz"
+  "version" "2.3.3"
 
 "function-bind@^1.1.2":
   "integrity" "sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA=="
