@@ -5,31 +5,30 @@ const getRecommendations = (formData = {}, products = []) => {
     selectedRecommendationType,
   } = formData;
 
-  const scoredProducts = products.map((product) => {
-    const preferenceMatches = product.preferences.filter((p) =>
-      selectedPreferences.includes(p)
-    ).length;
-    const featureMatches = product.features.filter((f) =>
-      selectedFeatures.includes(f)
-    ).length;
+  const scored = products
+    .map((product) => {
+      const score =
+        product.preferences.filter((pref) => selectedPreferences.includes(pref)).length +
+        product.features.filter((feat) => selectedFeatures.includes(feat)).length;
 
-    return {
-      ...product,
-      score: preferenceMatches + featureMatches,
-    };
-  });
+      let relevanceLevel = 'low';
+      if (score >= 3) relevanceLevel = 'high';
+      else if (score === 2) relevanceLevel = 'medium';
 
-  const matched = scoredProducts.filter((p) => p.score > 0);
+      return {
+        ...product,
+        score,
+        relevanceLevel,
+      };
+    })
+    .filter((product) => product.score > 0)
+    .sort((a, b) => b.score - a.score);
 
-  if (selectedRecommendationType === 'SingleProduct') {
-    const sorted = matched.sort((a, b) => a.score - b.score);
-    const best = sorted[sorted.length - 1];
-    return best ? [best] : [];
-  }
+  if (selectedRecommendationType === "SingleProduct")
+    return scored.length ? [scored.pop()] : [];
 
-  if (selectedRecommendationType === 'MultipleProducts') {
-    return matched.sort((a, b) => b.score - a.score);
-  }
+  if (selectedRecommendationType === "MultipleProducts")
+    return scored;
 
   return [];
 };
