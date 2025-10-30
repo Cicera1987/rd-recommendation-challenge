@@ -15,7 +15,10 @@ describe('recommendationService', () => {
     );
 
     expect(recommendations).toHaveLength(1);
-    expect(recommendations[0].name).toBe('RD Conversas');
+    const product = recommendations[0];
+    expect(product.name).toBe('RD Conversas');
+    expect(product.score).toBeGreaterThan(0);
+    expect(product.relevanceLevel).toBeDefined();
   });
 
   test('Retorna recomendações corretas para MultipleProducts com base nas preferências selecionadas', () => {
@@ -38,10 +41,14 @@ describe('recommendationService', () => {
     );
 
     expect(recommendations).toHaveLength(2);
-    expect(recommendations.map((product) => product.name)).toEqual([
-      'RD Station CRM',
-      'RD Station Marketing',
-    ]);
+
+    const names = recommendations.map((product) => product.name);
+    expect(names).toEqual(['RD Station CRM', 'RD Station Marketing']);
+
+    recommendations.forEach((product) => {
+      expect(product.score).toBeGreaterThan(0);
+      expect(product.relevanceLevel).toBeDefined();
+    });
   });
 
   test('Retorna apenas um produto para SingleProduct com mais de um produto de match', () => {
@@ -63,7 +70,10 @@ describe('recommendationService', () => {
     );
 
     expect(recommendations).toHaveLength(1);
-    expect(recommendations[0].name).toBe('RD Station Marketing');
+    const product = recommendations[0];
+    expect(product.name).toBe('RD Station Marketing');
+    expect(product.score).toBeGreaterThan(0);
+    expect(product.relevanceLevel).toBeDefined();
   });
 
   test('Retorna o último match em caso de empate para SingleProduct', () => {
@@ -78,6 +88,9 @@ describe('recommendationService', () => {
     );
 
     expect(recommendations).toHaveLength(1);
-    expect(recommendations[0].name).toBe('RD Conversas');
+    const product = recommendations[0];
+    expect(product.name).toBe('RD Conversas');
+    expect(product.score).toBeGreaterThan(0);
+    expect(product.relevanceLevel).toBeDefined();
   });
 });
