@@ -1,18 +1,18 @@
-# 🚀 Teste Técnico - Recomendador de Produtos RD Station
+# Teste Técnico - Recomendador de Produtos RD Station
 
 Este projeto foi desenvolvido como parte do **teste técnico** para a vaga de **Desenvolvedor(a) Front-end** na **RD Station**.  
 O objetivo principal é implementar a **lógica de recomendação de produtos RD Station** em uma aplicação web existente, integrando a funcionalidade ao layout e fluxo já definidos.
 
 ---
 
-## 🎯 Missão
+## Missão
 
 Desenvolver a funcionalidade central de **recomendação de produtos** dentro de uma aplicação **React.js** pré-existente.  
 A aplicação permite que os usuários selecionem suas preferências e funcionalidades desejadas, recebendo **recomendações de produtos personalizadas** com base em suas escolhas.
 
 ---
 
-## 🧩 Contexto
+## Contexto
 
 - Parte do processo seletivo para **Desenvolvedor(a) Front-end** na RD Station.  
 - Estrutura básica construída com **React.js** e **json-server**.  
@@ -21,7 +21,7 @@ A aplicação permite que os usuários selecionem suas preferências e funcional
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **React.js** → Desenvolvimento do front-end.  
 - **json-server** → Simulação de um servidor RESTful com dados de produtos.  
@@ -31,7 +31,7 @@ A aplicação permite que os usuários selecionem suas preferências e funcional
 
 ---
 
-## ⚙️ Requisitos Técnicos
+## Requisitos Técnicos
 
 ### Familiaridade com Tailwind CSS
 O layout da aplicação foi desenvolvido com **Tailwind CSS**.  
@@ -96,8 +96,9 @@ npm run dev	 - Inicia frontend e backend simultaneamente.
 
 ### Autor
 
-Desenvolvido por [Cicera Ribeiro]
-📧 [cicera.ribeiro@rede.ulbra.br]
+Desenvolvido por Cicera Ribeiro
+
+🔗 [cicera.ribeiro@rede.ulbra.br]
 
 🔗 https://github.com/Cicera1987
 
